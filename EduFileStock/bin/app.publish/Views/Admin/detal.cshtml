@@ -1,0 +1,128 @@
+﻿
+@{
+    ViewBag.Title = "detal";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+<div class="content table-responsive table-full-width">
+    <div>
+        <div style="overflow-x: auto;">
+            <div class="content table-responsive table-full-width">
+                <table id="mytable" style="cursor: pointer;" class="table table-hover table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Sharedby</th>
+                            <th>Title</th>
+                            <th>Text</th>
+                            <th>Photo1</th>
+                            <th>Photo2</th>
+                            <th>Photo3</th>
+                            <th>Video Link</th>
+                            <th>File</th>
+                            <th>Category</th>
+                            <th class="text-center">Düzəliş et</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in ViewBag.detail)
+                        {
+                        <tr>
+                            <td>@(ViewBag.detail.IndexOf(item)+1)</td>
+                            <td>@item.DetailAd</td>
+                            <td>@item.DetailTarix</td>
+                            <td>@item.DetailPaylaşan</td>
+                            <td>@item.DetailIlkP</td>
+                            <td>@item.DetailOrtaP</td>
+                            <td>@item.DetailPhoto1</td>
+                            <td>@item.DetailPhoto2</td>
+                            <td>@item.DetailPhoto3</td>
+                            <td>@item.DetailVideoLink</td>
+                            <td>@item.DetailFile</td>
+                            <td>@item.MelumatAltLiAd</td>
+                            <td class="text-center"><a href="~/Admin/sildetail/@item.DetailId"><i style="font-size: 25px;" class="pe-7s-close"></i></a></td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <h4>Add new Material :</h4>
+</div>
+<div class="content">
+    <form method="post" action="~/Admin/yenidetal" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Başlıq:</font></font></label>
+                    <input type="text" class="form-control" placeholder="Başlıq" name="DetailAd">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Paylaşan:</font></font></label>
+                    <input type="text" class="form-control" placeholder="Ad" name="DetailPaylaşan">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="exampleInputEmail1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giriş mətni:</font></font></label>
+                    <input type="text" class="form-control" placeholder="text" name="DetailIlkP">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tam mətn:</font></font></label>
+                <input type="text" class="form-control" placeholder="text" name="DetailOrtaP">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Video (varsa):</font></font></label>
+                <input type="text" class="form-control" placeholder="videolink" name="DetailVideoLink">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alt Kateqoriyanı <br /> seçin:</font></font></label>
+                <select name="DetailLiId" class="form-control" style="cursor: pointer;">
+                    @foreach (var item in ViewBag.altli)
+                    {
+                        <option value="@item.MelumatAltLiId">@item.MelumatAltLiAd</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PhotoTitle:</font></font></label>
+                <input type="file" class="form-control" placeholder="photo" name="DetailPhoto1">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Photo:</font></font></label>
+                <input type="file" class="form-control" placeholder="photo" name="DetailPhoto2">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Photo:</font></font></label>
+                <input type="file" class="form-control" placeholder="photo" name="DetailPhoto3">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">File link:</font></font></label>
+                <input type="file" class="form-control" placeholder="link" name="DetailFile">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-info btn-fill pull-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Əlavə et</font></font></button>
+        <div class="clearfix"></div>
+    </form>
+</div>

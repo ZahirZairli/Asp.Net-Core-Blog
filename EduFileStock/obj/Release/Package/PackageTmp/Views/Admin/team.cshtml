@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewBag.Title = "team";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<div class="content table-responsive table-full-width">
+    <div>
+        <div style="overflow-x: auto;">
+            <div class="content table-responsive table-full-width">
+                <table id="mytable" style="cursor: pointer;" class="table table-hover table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Job</th>
+                            <th>Text</th>
+                            <th>Fb</th>
+                            <th>Inst</th>
+                            <th>Tvit</th>
+                            <th>Viki</th>
+                            <th>Photo</th>
+                            <th class="text-center">Düzəliş et</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in ViewBag.team)
+                        {
+                            <tr>
+                                <td>@(ViewBag.team.IndexOf(item)+1)</td>
+                                <td>@item.TeamName</td>
+                                <td>@item.TeamJob</td>
+                                <td>@item.TeamText</td>
+                                <td>@item.TeamFb</td>
+                                <td>@item.TeamInst</td>
+                                <td>@item.TeamTvit</td>
+                                <td>@item.TeamVik</td>
+                                <td>@item.TeamPhoto</td>
+                                <td class="text-center"><a href="~/Admin/silteam/@item.TeamId"><i style="font-size: 25px;" class="pe-7s-close"></i></a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="header">
+    <h4>Add new TeamMate :</h4>
+</div>
+<div class="content">
+    <form method="post" action="~/Admin/yeniteam" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Full Name:</font></font></label>
+                    <input type="text" class="form-control" placeholder="name,surname" name="TeamName">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Job:</font></font></label>
+                    <input type="text" class="form-control" placeholder="job" name="TeamJob">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="exampleInputEmail1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Text:</font></font></label>
+                    <input type="text" class="form-control" placeholder="text" name="TeamText">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Facebook:</font></font></label>
+                <input type="text" class="form-control" placeholder="fb" name="TeamFb">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">InsTagram:</font></font></label>
+                <input type="text" class="form-control" placeholder="inst" name="TeamInst">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Viki:</font></font></label>
+                <input type="text" class="form-control" placeholder="viki" name="TeamVik">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tvit:</font></font></label>
+                <input type="text" class="form-control" placeholder="tvit" name="TeamTvit">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Photo:</font></font></label>
+                <input type="file" class="form-control" placeholder="photo" name="TeamPhoto">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-info btn-fill pull-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Əlavə et</font></font></button>
+        <div class="clearfix"></div>
+    </form>
+</div>

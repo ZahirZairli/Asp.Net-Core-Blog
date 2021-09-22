@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>login</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="~/assets/css/login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <div class="fadeIn first">
+                <img style="border-radius: 50%;width: 50%;height: 200px;" src="~/assets/img/l.jpg" id="icon" alt="EduFileStock" />
+            </div>
+            <form method="post" action="~/Admin/SignIn">
+                <input type="text" id="IstifadeciMail" style="cursor: pointer;" class="fadeIn second" name="IstifadeciMail" placeholder="E-mail address">
+                <input type="text" id="IstifadeciParol" style="cursor: pointer;" class="fadeIn third" name="IstifadeciParol" autocomplete="off" placeholder="password">
+                <input style="cursor: pointer;" type="submit" class="fadeIn fourth" value="Log In">
+            </form>
+            <div class="error">
+                <small style="color:red;width: 10px;">@TempData["Message"]</small>
+            </div>
+            <div id="formFooter">
+                <a class="underlineHover" href="~/Admin/ForgetPass">Forgot Password?</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+

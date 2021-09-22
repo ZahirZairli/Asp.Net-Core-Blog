@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ForgetPass</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="~/assets/css/login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <div class="fadeIn first">
+                <img style="border-radius: 50%;width: 50%;height: 200px;" src="~/assets/img/l.jpg" id="icon" alt="EduFileStock" />
+            </div>
+            <form method="post" action="~/Admin/kodal">
+                <input type="text" id="IstifadeciMail" style="cursor: pointer;" class="fadeIn second" name="IstifadeciMail" placeholder="E-mail address">
+                <input style="cursor: pointer;" type="submit" class="fadeIn fourth" value="Kodu al">
+            </form>
+            <div class="error">
+            <p>Şifrənizin bərpası üçün mailə keçid kodu alın!</p>
+            </div>
+            <div class="error">
+                <small style="color:red;width: 10px;">@TempData["Message"]</small>
+            </div>
+            <div id="formFooter">
+                <a style="text-decoration: none;" class="underlineHover" href="https://www.instagram.com/zairlizahir/">Shared by <span style="color:red;">Zahir Zairli</span></a><br />
+                <a class="underlineHover" href="~/Admin/AdminLogin">Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

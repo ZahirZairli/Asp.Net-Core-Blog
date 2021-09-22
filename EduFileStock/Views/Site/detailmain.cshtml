@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewBag.Title = @ViewBag.detal.DetailAd;
+    ViewBag.description = ViewBag.detal.DetailAd;
+    ViewBag.ogtitle = ViewBag.detal.DetailAd;
+    Layout = "~/Views/Shared/Site.cshtml";
+}
+@using EduFileStock.Models
+<div class="content" data-pagetitle="Blog single">
+    <div class="hero-section-dec color-bg">
+        <div class="progress-indicator">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="-1 -1 34 34">
+                <circle cx="16" cy="16" r="15.9155"
+                        class="progress-bar__background" />
+                <circle cx="16" cy="16" r="15.9155"
+                        class="progress-bar__progress
+                                    js-progress-bar" />
+            </svg>
+        </div>
+    </div>
+    <div class="fixed-column-wrap">
+        <div class="pr-bg"></div>
+        <div class="fixed-column-wrap-content">
+            <div class="bg">
+                <img style="width: 100%; height: 100%;" src="~/Content/images/team/@ViewBag.detal.DetailPhoto1" />
+            </div>
+            <div class="overlay"></div>
+            <div class="progress-bar-wrap bot-element">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="fixed-column-wrap_title first-tile_load">
+                <h2>@ViewBag.detal.DetailAd <br>-EduFİleStock</h2>
+                <p>Bizimlə birgə sən də öyrən,öyrət,paylaş!</p>
+            </div>
+            <div class="fixed-column-dec"></div>
+            <div class="fixed-column-linedec"></div>
+            <div class="scroll-notifer">Aşağı sürüşdür   </div>
+        </div>
+    </div>
+    <div class="column-wrap">
+        <div class="column-wrap-container fl-wrap">
+            <div class="col-wc_dec"></div>
+            <section class="scroll_sec" id="sec1">
+                <div class="container">
+                    <div class="section-title fl-wrap">
+                        <h3>@ViewBag.detal.DetailAd</h3>
+                        <ul class="blog-title-opt  fl-wrap">
+                            <li>@ViewBag.detal.DetailTarix</li>
+                        </ul>
+                    </div>
+                    <div class="blog-media fl-wrap">
+                        <div class="single-slider-wrap">
+                            <div class="single-slider fl-wrap">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper lightgallery">
+                                        <div class="swiper-slide hov_zoom"><img style="height: 400px;" src="~/Content/images/team/@ViewBag.detal.DetailPhoto1" alt=""><a href="~/Content/images/team/@ViewBag.detal.DetailPhoto1" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a></div>
+                                        <div class="swiper-slide hov_zoom"><img style="height: 400px;" src="~/Content/images/team/@ViewBag.detal.DetailPhoto2" alt=""><a href="~/Content/images/team/@ViewBag.detal.DetailPhoto2" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a></div>
+                                        <div class="swiper-slide hov_zoom"><img style="height: 400px;" src="~/Content/images/team/@ViewBag.detal.DetailPhoto3" alt=""><a href="~/Content/images/team/@ViewBag.detal.DetailPhoto3" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ss-slider-pagination_wrap">
+                                <div class="ss-slider-pagination"></div>
+                            </div>
+                            <div class="ss-slider-cont ss-slider-cont-prev"><i class="fal fa-angle-left"></i></div>
+                            <div class="ss-slider-cont ss-slider-cont-next"><i class="fal fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="fl-wrap text-block">
+                        <div class="clearfix"></div>
+
+                        <blockquote>
+                            <p> @ViewBag.detal.DetailOrtaP </p>
+                        </blockquote>
+                    </div>
+                    @if (ViewBag.detal.DetailVideoLink != null)
+                    {
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="dec-img   fl-wrap">
+                                    <img src="~/Content/images/ekran.png" class="respimg" alt="">
+                                    <a class="video_link image-popup" href="@ViewBag.detal.DetailVideoLink"><i class="fas fa-play"></i><span>Videonu başlat</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    @if (ViewBag.detal.DetailFile != null)
+                    {
+                        <div class="pr-subtitle">
+                            <a href="~/Content/images/team/@ViewBag.detal.DetailFile" download class="btn fl-btn color-bg"><span>Pdf'i yüklə</span></a>
+                        </div>
+                    }
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="to-top-btn to-top"><i class="fal fa-long-arrow-up"></i></div>
+    <div class="pagination">
+        <div class="pr-bg pr-bg-white"></div>
+        <div class="container">
+
+            <div class="to-top-btn to-top"><i class="fal fa-long-arrow-up"></i></div>
+            <a href="#"></a>
+            <a href="#" class="current-page"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Casper\source\repos\EduFileStock\EduFileStock\bin\app.publish\</_PublishTargetUrl>
+    <History>True|2021-08-14T20:44:47.7283952Z;True|2021-08-07T15:32:23.2116109+04:00;True|2021-08-01T01:24:14.7923174+04:00;True|2021-07-26T04:02:28.7740378+04:00;True|2021-06-21T17:36:32.1459593+04:00;True|2021-06-20T02:42:55.7608541+04:00;True|2021-06-18T02:28:54.1245040+04:00;True|2021-06-18T02:20:30.0807323+04:00;True|2021-06-17T18:44:21.8361875+04:00;True|2021-06-17T17:24:27.5904515+04:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="assets/css/animate.min.css">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/css/bootstrap.min.css">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/css/demo.css">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/css/light-bootstrap-dashboard.css">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/css/login.css">
+      <publishTime>06/15/2021 16:03:01</publishTime>
+    </File>
+    <File Include="assets/css/pe-icon-7-stroke.css">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/fonts/Pe-icon-7-stroke.eot">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/fonts/Pe-icon-7-stroke.svg">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/fonts/Pe-icon-7-stroke.ttf">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/fonts/Pe-icon-7-stroke.woff">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/img/default-avatar.png">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-0.jpg">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-1.jpg">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-2.jpg">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-3.jpg">
+      <publishTime>06/15/2021 15:25:57</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-4.jpg">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-5.jpg">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-6.jpg">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-7.jpg">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/faces/tim_vector.jpe">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/favicon.ico">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/l.jpg">
+      <publishTime>06/15/2021 16:05:20</publishTime>
+    </File>
+    <File Include="assets/img/loading-bubbles.svg">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/mask.png">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/new_logo.png">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/sidebar-1.jpg">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/sidebar-2.jpg">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/sidebar-3.jpg">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/sidebar-4.jpg">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/sidebar-5.jpg">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/img/tim_80x80.png">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap-checkbox-radio-switch.js">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap-notify.js">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap-select.js">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap.min.js">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/js/chartist.min.js">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/js/demo.js">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery-1.10.2.js">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/js/light-bootstrap-dashboard.js">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_buttons.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_cards.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_chartist.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_icons.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_inputs.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_labels.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_morphing-buttons.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_navbars.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_social-buttons.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_tabs.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_transparency.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_vendor-prefixes.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_alerts.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_buttons.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_cards.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_chartist.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_checkbox-radio-switch.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_dropdown.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_footers.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_inputs.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_misc.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_mixins.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_navbars.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_responsive.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_sidebar-and-main-panel.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_tables.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_typography.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_variables.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="assets/sass/light-bootstrap-dashboard.scss">
+      <publishTime>06/15/2021 15:25:58</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>10/09/2013 17:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>10/09/2013 17:29:20</publishTime>
+    </File>
+    <File Include="bin/EduFileStock.dll">
+      <publishTime>08/15/2021 00:44:40</publishTime>
+    </File>
+    <File Include="bin/EduFileStock.pdb">
+      <publishTime>08/15/2021 00:44:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/09/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 12:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/22/2019 01:06:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/08/2018 12:18:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/08/2018 12:18:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/08/2018 12:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/12/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/12/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>05/11/2016 18:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/11/2016 18:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/16/2018 03:29:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/11/2016 18:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>05/11/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/11/2016 18:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/11/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>05/11/2016 18:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/11/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>05/11/2016 18:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/11/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/11/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>05/11/2016 18:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>05/11/2016 18:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/16/2018 03:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>05/11/2016 18:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/11/2016 18:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/11/2016 18:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/11/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/11/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/11/2016 18:57:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>05/11/2016 18:57:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/11/2016 18:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/11/2016 18:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/11/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/11/2016 18:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/11/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/08/2018 12:18:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/08/2018 12:09:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/08/2018 12:18:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/28/2018 12:59:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/02/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/28/2018 13:00:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="Content/css/color.css">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/css/images/layers-2x.html">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/css/images/layers.html">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/css/images/marker-icon.html">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/css/plugins.css">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/css/style.css">
+      <publishTime>06/20/2021 01:35:39</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-brands-400.eot">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-brands-400.svg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-brands-400.ttf">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-brands-400.woff">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-brands-400.woff2">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-brands-400d41d.eot">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-light-300.eot">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-light-300.svg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-light-300.ttf">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-light-300.woff">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-light-300.woff2">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-light-300d41d.eot">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-regular-400.eot">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-regular-400.svg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-regular-400.ttf">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-regular-400.woff">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-regular-400.woff2">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-regular-400d41d.eot">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-solid-900.eot">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-solid-900.svg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-solid-900.ttf">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-solid-900.woff">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-solid-900.woff2">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/fa-solid-900d41d.eot">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/lgd41d.eot">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/lgd641.eot">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/lgd641.svg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/lgd641.ttf">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/fonts/lgd641.woff">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/about.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/avatar/1.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/avatar/2.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/avatar/3.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/avatar/4.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/bg/1.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/bg/10.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/bg/12.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/bg/13.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/bg/17.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/bg/2.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/bg/3.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/bg/7.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/bg/8.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/bg/9.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/clients/1.png">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/clients/2.png">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/clients/3.png">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/clients/4.png">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/ekran.png">
+      <publishTime>06/18/2021 02:06:51</publishTime>
+    </File>
+    <File Include="Content/images/favicon.ico">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/1.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/10.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/11.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/13.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/14.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/15.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/17.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/18.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/19.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/2.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/3.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/4.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/5.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/6.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/7.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/8.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/folio/9.jpg">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/lo.jpeg">
+      <publishTime>06/14/2021 14:49:47</publishTime>
+    </File>
+    <File Include="Content/images/loading.html">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/logo.png">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/images/team/1.jpg">
+      <publishTime>06/14/2021 14:42:37</publishTime>
+    </File>
+    <File Include="Content/images/team/2.jpg">
+      <publishTime>06/14/2021 14:42:37</publishTime>
+    </File>
+    <File Include="Content/images/team/3.jpg">
+      <publishTime>06/14/2021 14:42:37</publishTime>
+    </File>
+    <File Include="Content/img/video-play.html">
+      <publishTime>06/14/2021 14:42:37</publishTime>
+    </File>
+    <File Include="Content/img/vimeo-play.html">
+      <publishTime>06/14/2021 14:42:37</publishTime>
+    </File>
+    <File Include="Content/img/youtube-play.html">
+      <publishTime>06/14/2021 14:42:37</publishTime>
+    </File>
+    <File Include="Content/js/jquery.min.js">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/js/plugins.js">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/js/scripts.js">
+      <publishTime>06/15/2021 04:54:20</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/14/2021 14:31:38</publishTime>
+    </File>
+    <File Include="Content/video/1.mp4">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="Content/video/2.mp4">
+      <publishTime>06/14/2021 14:42:36</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/14/2021 14:31:38</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/14/2021 14:31:38</publishTime>
+    </File>
+    <File Include="Models/DataClasses.dbml">
+      <publishTime>06/17/2021 17:22:57</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.js">
+      <publishTime>06/14/2021 14:31:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.js">
+      <publishTime>06/14/2021 14:31:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.map">
+      <publishTime>06/14/2021 14:31:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.js">
+      <publishTime>06/14/2021 14:31:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.js">
+      <publishTime>06/14/2021 14:31:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.map">
+      <publishTime>06/14/2021 14:31:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>06/14/2021 14:31:51</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>06/14/2021 14:31:51</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>06/14/2021 14:31:51</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>06/14/2021 14:31:51</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>06/14/2021 14:31:50</publishTime>
+    </File>
+    <File Include="Views/Admin/AdminLogin.cshtml">
+      <publishTime>06/15/2021 16:24:23</publishTime>
+    </File>
+    <File Include="Views/Admin/contact.cshtml">
+      <publishTime>06/15/2021 17:44:45</publishTime>
+    </File>
+    <File Include="Views/Admin/detal.cshtml">
+      <publishTime>06/19/2021 20:03:47</publishTime>
+    </File>
+    <File Include="Views/Admin/editaltli.cshtml">
+      <publishTime>06/15/2021 20:00:22</publishTime>
+    </File>
+    <File Include="Views/Admin/editmelumat.cshtml">
+      <publishTime>06/15/2021 19:42:34</publishTime>
+    </File>
+    <File Include="Views/Admin/ForgetPass.cshtml">
+      <publishTime>06/15/2021 16:24:15</publishTime>
+    </File>
+    <File Include="Views/Admin/Index.cshtml">
+      <publishTime>06/15/2021 17:04:24</publishTime>
+    </File>
+    <File Include="Views/Admin/li.cshtml">
+      <publishTime>06/15/2021 18:25:27</publishTime>
+    </File>
+    <File Include="Views/Admin/team.cshtml">
+      <publishTime>06/15/2021 21:43:56</publishTime>
+    </File>
+    <File Include="Views/Admin/UpdatePass.cshtml">
+      <publishTime>06/15/2021 16:51:46</publishTime>
+    </File>
+    <File Include="Views/Error/PageError.cshtml">
+      <publishTime>07/08/2021 15:30:59</publishTime>
+    </File>
+    <File Include="Views/Shared/Admin.cshtml">
+      <publishTime>06/15/2021 17:08:30</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>06/14/2021 14:31:38</publishTime>
+    </File>
+    <File Include="Views/Shared/Site.cshtml">
+      <publishTime>08/15/2021 00:43:36</publishTime>
+    </File>
+    <File Include="Views/Site/about.cshtml">
+      <publishTime>06/21/2021 17:24:34</publishTime>
+    </File>
+    <File Include="Views/Site/contact.cshtml">
+      <publishTime>06/21/2021 17:34:29</publishTime>
+    </File>
+    <File Include="Views/Site/detail.cshtml">
+      <publishTime>08/01/2021 01:22:12</publishTime>
+    </File>
+    <File Include="Views/Site/detailmain.cshtml">
+      <publishTime>06/21/2021 17:34:04</publishTime>
+    </File>
+    <File Include="Views/Site/Index.cshtml">
+      <publishTime>08/01/2021 01:17:01</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>06/14/2021 14:31:38</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/08/2021 15:32:17</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

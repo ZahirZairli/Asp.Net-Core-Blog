@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "contact";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<div class="content table-responsive table-full-width">
+    <table id="mytable" style="cursor: pointer;" class="table table-hover table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>İstifadəçinin Adı</th>
+                <th>İstifadəçinin emaili</th>
+                <th>İstifadəcinin mesajı</th>
+                <th colspan="2" class="text-center">Düzəliş et</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.contact)
+             {
+             <tr>
+                <td>@(ViewBag.contact.IndexOf(item)+1)</td>
+                <td>@item.ContactName</td>
+                <td>@item.ContactMail</td>
+                <td>@item.ContactText</td>
+                <td class="text-center"><a href="mailto:@item.ContactMail"><i class="fas fa-edit"></i></a></td>
+                <td class="text-center"><a href="~/Admin/silcontact/@item.ContactId"><i style="font-size: 25px;" class="pe-7s-close"></i></a></td>
+             </tr>
+             }
+        </tbody>
+    </table>
+</div>
+

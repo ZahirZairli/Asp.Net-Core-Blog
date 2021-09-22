@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="nurlans1_edufilestock" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=wdb4.my-hosting-panel.com;Initial Catalog=nurlans1_edufilestock;Persist Security Info=True;User ID=nurlans1_admin" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="nurlans1_edufilestockConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.contact" Member="contact">
+    <Type Name="contact">
+      <Column Name="ContactId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContactName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ContactMail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ContactText" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.detail" Member="detail">
+    <Type Name="detail">
+      <Column Name="DetailId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DetailLiId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DetailAd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailTarix" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DetailPaylaşan" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailIlkP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailOrtaP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailPhoto1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailPhoto2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailPhoto3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailFile" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailVideoLink" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Istifadeci" Member="Istifadeci">
+    <Type Name="Istifadeci">
+      <Column Name="IstifadeciId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IstifadeciTamAd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IstifadeciTelefon" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IstifadeciPhoto" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IstifadeciTipId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IstifadeciMail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IstifadeciQurtar" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IstifadeciParol" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.istip" Member="istip">
+    <Type Name="istip">
+      <Column Name="TipId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TipAd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.melumataltli" Member="melumataltli">
+    <Type Name="melumataltli">
+      <Column Name="MelumatAltLiId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MelumatAltLiAd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MelumatAltLiMelumatId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.melumatli" Member="melumatli">
+    <Type Name="melumatli">
+      <Column Name="MelumatId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MelumatAd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.team" Member="team">
+    <Type Name="team">
+      <Column Name="TeamId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TeamName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TeamJob" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TeamText" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TeamFb" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TeamInst" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TeamTvit" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TeamVik" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TeamPhoto" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.detalmain" Member="detalmain">
+    <Type Name="detalmain">
+      <Column Name="DetailId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DetailLiId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DetailAd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailTarix" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DetailPaylaşan" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailIlkP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailOrtaP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailPhoto1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailPhoto2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailPhoto3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailFile" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetailVideoLink" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MelumatAltLiId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MelumatAltLiAd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MelumatAltLiMelumatId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.limain" Member="limain">
+    <Type Name="limain">
+      <Column Name="MelumatAltLiId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MelumatAltLiAd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MelumatAltLiMelumatId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MelumatId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MelumatAd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

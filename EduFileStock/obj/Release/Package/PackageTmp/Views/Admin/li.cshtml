@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewBag.Title = "li";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="content">
+        <div style="border-right: 4px solid #1DC7EA;border-left: 4px solid #1DC7EA;padding: 18px;" class="col-md-6">
+            <div class="header">
+                <h4>Siyahıya yeni kateqroiya əlavə et:</h4>
+            </div>
+            <hr />
+            <form method="post" action="~/Admin/yenikat">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yeni kateqoriyanın adı:</font></font></label>
+                            <input type="text" class="form-control" placeholder="Yeni kateqoriyanın adı" name="MelumatAd">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-info btn-fill pull-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Əlavə et</font></font></button>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+        <div style="border-right: 4px solid #1DC7EA;padding: 18px;" class="col-md-6">
+            <div class="header">
+                <h4>Siyahıya yeni alt kateqoriya əlavə et:</h4>
+            </div>
+            <hr />
+            <form method="post" action="~/Admin/yenialtli">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yeni alt kateqoriyanın adı:</font></font></label>
+                            <input type="text" class="form-control" placeholder="ad" name="MelumatAltLiAd">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kateqoriya <br /> seçin:</font></font></label>
+                            <select name="MelumatAltLiMelumatId" class="form-control" style="cursor: pointer;">
+                                @foreach (var item in ViewBag.melumat)
+                                {
+                                    <option value="@item.MelumatId">@item.MelumatAd</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <button type="submit" class="btn btn-info btn-fill pull-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Əlavə et</font></font></button>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-5" style="margin-top: 70px; float:right;">
+        <div class="header">
+            <h4 class="title">Bütün kateqoryalarin siyahısı:</h4>
+        </div>
+        <div class="content table-responsive table-full-width">
+            <table id="mytable1" style="cursor: pointer;" class="table table-hover table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Kateqoriya Ad</th>
+                        <th colspan="2" class="text-center">Düzəliş et</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in ViewBag.melumat)
+                    {
+                        <tr>
+                            <td>@(ViewBag.melumat.IndexOf(item)+1)</td>
+                            <td>@item.MelumatAd</td>
+                            <td class="text-center"><a href="~/Admin/editmelumat/@item.MelumatId"><i class="fas fa-edit"></i></a></td>
+                            <td class="text-center"><a href="~/Admin/silmelumat/@item.MelumatId"><i style="font-size: 25px;" class="pe-7s-close"></i></a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-5" style="margin-top: 70px;">
+        <div class="header">
+            <h4 class="title">Bütün Alt kateqoriyalarin siyahısı:</h4>
+        </div>
+        <div class="content table-responsive table-full-width">
+            <table id="mytable2" style="cursor: pointer;" class="table table-hover table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Alt Kateqoriya Ad</th>
+                        <th>Alt Kateqoriyanın aid olduğu kateqoriya</th>
+                        <th colspan="2" class="text-center">Düzəliş et</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in ViewBag.limain)
+                    {
+                    <tr>
+                        <td>@(ViewBag.limain.IndexOf(item)+1)</td>
+                        <td>@item.MelumatAltLiAd</td>
+                        <td>@item.MelumatAd</td>
+                        <td class="text-center"><a href="~/Admin/editaltli/@item.MelumatAltLiId"><i class="fas fa-edit"></i></a></td>
+                        <td class="text-center"><a href="~/Admin/silaltli/@item.MelumatAltLiId"><i style="font-size: 25px;" class="pe-7s-close"></i></a></td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
