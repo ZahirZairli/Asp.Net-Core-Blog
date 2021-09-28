@@ -151,3 +151,14 @@ C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\bin\Debug\net5.0\BusinessLayer.
 C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\bin\Debug\net5.0\DataAccessLayer.pdb
 C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\bin\Debug\net5.0\EntityLayer.pdb
 C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Shared\UserLayout.cshtml.g.cs
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Blog\Index.cshtml.g.cs
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Shared\Partial1.cshtml.g.cs
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Shared\Partial2.cshtml.g.cs
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Shared\Partial3.cshtml.g.cs
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Blog\BlogReadAll.cshtml.g.cs
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Comment\PartialAddComment.cshtml.g.cs
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Shared\Components\CommentList\Default.cshtml.g.cs
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Shared\Components\CommentListByBlog\Default.cshtml.g.cs
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Shared\Components\CategoryList\Default.cshtml.g.cs

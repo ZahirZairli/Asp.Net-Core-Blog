@@ -1,0 +1,48 @@
+﻿@using EntityLayer.Concrete
+@model List<Category>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container" style="margin-top: 40px;">
+        <table class="table table-bordered table-hover" style="cursor: pointer;">
+            <tshead>
+                <tr class="text-center">
+                    <th>CategoryId</th>
+                    <th>CategoryName</th>
+                    <th>Status</th>
+                    <th>Detail</th>
+                    <th>Delete</th>
+                </tr>
+            </tshead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="text-center">
+                        <td>@(Model.IndexOf(item)+1)</td>
+                        <td>@item.CategoryName</td>
+                        <td>@item.CategoryStatus</td>
+                        <td><a class="btn btn-warning" href="#">Details</a></td>
+                        <td><a class="btn btn-danger" href="#">Delete</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
