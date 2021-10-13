@@ -59,56 +59,10 @@
                         <div class="tech-btm">
                             <img src="~/web/images/banner1.jpg" class="img-fluid" alt="">
                         </div>
-                        <div class="tech-btm">
-                            <h4>Yeni paylaşımlarımızdan xəbər almaq üçün,bizə abonə olun!</h4>
-                            <p>Qeyd:Abonə olmaq tamami ilə ödənişsizdir.Sadəcə abonə ola klik edib,yeni postlardan xəbərdar ola bilərsiniz!</p>
-                            <form action="#" method="post">
-                                <input type="email" placeholder="Email" required="">
-                                <input type="submit" value="Abonə ol">
-                            </form>
-                        </div>
+                        <h4>Yeni paylaşımlarımızdan xəbər almaq üçün,bizə abonə olun!</h4>
+                        @await Html.PartialAsync("~/Views/NewsLetter/SubscribeMail.cshtml")
                         @await Component.InvokeAsync("CategoryList")
-                        <div class="tech-btm">
-                            <h4>Yazıçının digər yazıları</h4>
-
-                            <div class="blog-grids row mb-3">
-                                <div class="col-md-5 blog-grid-left">
-                                    <a href="single.html">
-                                        <img src="~/web/images/1.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-md-7 blog-grid-right">
-
-                                    <h5>
-                                        <a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
-                                    </h5>
-                                    <div class="sub-meta">
-                                        <span>
-                                            <i class="far fa-clock"></i> 20 Jan, 2018
-                                        </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="blog-grids row mb-3">
-                                <div class="col-md-5 blog-grid-left">
-                                    <a href="single.html">
-                                        <img src="~/web/images/6.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-md-7 blog-grid-right">
-                                    <h5>
-                                        <a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
-                                    </h5>
-                                    <div class="sub-meta">
-                                        <span>
-                                            <i class="far fa-clock"></i> 20 Feb, 2018
-                                        </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+                        @await Component.InvokeAsync("WriterLastBlog")
                         <div class="single-gd my-5 tech-btm">
                             <h4>İnkişaf</h4>
                             <div class="progress">

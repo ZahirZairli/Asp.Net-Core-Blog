@@ -3,80 +3,16 @@
         <div class="row">
             <div class="col-lg-4 footer-grid-agileits-w3ls text-left">
                 <h3>Haqqımızda </h3>
-                <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. lacinia eget consectetur sed, convallis at tellus..</p>
+                <p>Bloq – (ing. blog — şəbəkə jurnalı və ya hadisələr gündəliyi) fərdi jurnal olub, informasiyanı, fikirləri, şərhləri və müxtəlif tipli hiper əlaqələri özündə toplayan veb-saytdır. İngilis dilindəki “web” və “log” sözlərinin birləşməsindən ‎alınan “weblog” sözlüyünün zamanla təhrif olunmuş formasıdır. Hazırda bloqlar ən güclü Veb 2.0 və yeni medias..</p>
                 <div class="read">
-                    <a href="single.html" class="btn btn-primary read-m">Daha çox</a>
+                    <a href="~/About/About" class="btn btn-primary read-m">Daha çox</a>
                 </div>
             </div>
-            <div class="col-lg-4 footer-grid-agileits-w3ls text-left">
-                <div class="tech-btm">
-                    <h3>Son bloglar</h3>
-                    <div class="blog-grids row mb-3">
-                        <div class="col-md-5 blog-grid-left">
-                            <a href="single.html">
-                                <img src="~/web/images/4.jpg" class="card-img-top img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-7 blog-grid-right">
-                            <h5>
-                                <a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
-                            </h5>
-                            <div class="sub-meta">
-                                <span>
-                                    <i class="far fa-clock"></i> 20 Jan, 2018
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-grids row mb-3">
-                        <div class="col-md-5 blog-grid-left">
-                            <a href="single.html">
-                                <img src="~/web/images/5.jpg" class="card-img-top img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-7 blog-grid-right">
-                            <h5>
-                                <a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
-                            </h5>
-                            <div class="sub-meta">
-                                <span>
-                                    <i class="far fa-clock"></i> 20 Jan, 2018
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-grids row mb-3">
-                        <div class="col-md-5 blog-grid-left">
-                            <a href="single.html">
-                                <img src="~/web/images/6.jpg" class="card-img-top img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-7 blog-grid-right">
-                            <h5>
-                                <a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
-                            </h5>
-                            <div class="sub-meta">
-                                <span>
-                                    <i class="far fa-clock"></i> 20 Jan, 2018
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @await Component.InvokeAsync("BlogLast3Post")
             <!-- subscribe -->
             <div class="col-lg-4 subscribe-main footer-grid-agileits-w3ls text-left">
-                <h2>Signup to our newsletter</h2>
-                <div class="subscribe-main text-left">
-                    <div class="subscribe-form">
-                        <form action="#" method="post" class="subscribe_form">
-                            <input class="form-control" type="email" placeholder="Enter your email..." required="">
-                            <button type="submit" class="btn btn-primary submit">Submit</button>
-                        </form>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <p>We respect your privacy.No spam ever!</p>
-                </div>
+                <h2>Yeni paylaşımlarımızdan xəbər almaq üçün,bizə abonə olun!</h2>
+                  @await Html.PartialAsync("~/Views/NewsLetter/SubscribeMail.cshtml")
                 <!-- //subscribe -->
             </div>
         </div>
@@ -114,8 +50,8 @@
             </div>
             <div class="w3layouts-agile-copyrightbottom">
                 <p>
-                    © @DateTime.Now.Year Weblog. All Rights Reserved | Design by
-                    <a href="http://w3layouts.com/">W3layouts</a>
+                    © @DateTime.Now.Year Asp.Net Core 5.0 Bütün hüquqları qorunur | Hazırladı
+                    <a href="http://w3layouts.com/">Zairli Zahir</a>
                 </p>
 
             </div>
