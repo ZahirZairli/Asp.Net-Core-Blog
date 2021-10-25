@@ -39,7 +39,7 @@
                                 <h5 class="card-title">
                                     <a href="/Blog/BlogReadAll/@item.BlogId">@item.BlogTitle</a>
                                 </h5>
-                                @if (item.BlogContent.Length >= 30)
+                                @if (item.BlogContent.Length >= 31)
                                 {
                                     <p class="card-text mb-3">@item.BlogContent.Substring(0,item.BlogContent.Substring(0,30).LastIndexOf(" ")).... </p>
                                 }

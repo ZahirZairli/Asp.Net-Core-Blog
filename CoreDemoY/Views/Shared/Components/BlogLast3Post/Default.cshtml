@@ -13,7 +13,14 @@
             </div>
             <div class="col-md-7 blog-grid-right">
                 <h5>
-                    <a href="/Blog/BlogReadAll/@item.BlogId">@item.BlogContent.Substring(0, item.BlogContent.Substring(0, 50).LastIndexOf(" ")).... </a>
+                    @if (item.BlogContent.Length >= 51)
+                    {
+                        <a href="/Blog/BlogReadAll/@item.BlogId">@item.BlogContent.Substring(0, item.BlogContent.Substring(0, 50).LastIndexOf(" ")).... </a>
+                    }
+                    else
+                    {
+                        <a href="/Blog/BlogReadAll/@item.BlogId">@item.BlogContent.... </a>
+                    }
                 </h5>
                 <div class="sub-meta">
                     <span>

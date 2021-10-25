@@ -1,0 +1,46 @@
+﻿@using EntityLayer.Concrete
+@model List<Blog>
+@{
+    ViewData["Title"] = "BlogListByWriter";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<h1>Yazarın blogları</h1>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover" style="cursor: pointer;">
+        <thead>
+            <tr style="text-align: center;">
+                <th>#</th>
+                <th>Blog başlığı</th>
+                <th>Tarix</th>
+                <th>Kateqorya</th>
+                <th>Durum</th>
+                <th colspan="2">Ayarlar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr style="text-align: center;">
+                    <th>@(Model.IndexOf(item)+1)</th>
+                    <td>@item.BlogTitle</td>
+                    <td>@(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))</td>
+                    <td>@item.Category.CategoryName</td>
+                    @if (item.BlogStatus == true)
+                    {
+                        <td><span class="badge badge-success">Aktiv</span></td>
+                        <td><a href="#" class="btn btn-danger">Sil</a></td>
+                    }
+                    else
+                    {
+                        <td><span class="badge badge-secondary">Passiv</span></td>
+                        <td><a href="#" class="btn btn-success">Geri Qaytar</a></td>
+                    }
+                    <td><a href="#" class="btn btn-info">Düzəliş et</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    </div>
+    <a href="~/Blog/BlogAdd" class="btn btn-primary">Yeni blog</a>
