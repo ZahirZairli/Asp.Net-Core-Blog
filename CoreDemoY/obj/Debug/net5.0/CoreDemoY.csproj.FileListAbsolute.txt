@@ -185,3 +185,5 @@ C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Sh
 C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterNotification\Default.cshtml.g.cs
 C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Blog\BlogListByWriter.cshtml.g.cs
 C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Blog\BlogAdd.cshtml.g.cs
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Blog\EditBlog.cshtml.g.cs
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Dashboard\Index.cshtml.g.cs

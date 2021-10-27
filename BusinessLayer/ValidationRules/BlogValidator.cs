@@ -17,7 +17,7 @@ namespace BusinessLayer.ValidationRules
             RuleFor(x => x.BlogImage).NotEmpty().WithMessage("Blog şəkli boş saxlanıla bilməz");
             RuleFor(x => x.BlogTitle).MaximumLength(150).WithMessage("Blog başlığı maksimum 150 simvoldan ibarət olmalıdır");
             RuleFor(x => x.BlogTitle).MinimumLength(5).WithMessage("Blog başlığı minimum 5 simvoldan ibarət olmalıdır");
-            RuleFor(x => x.BlogContent).MinimumLength(50).WithMessage("Blog başlığı minimum 50 simvoldan ibarət olmalıdır");
+            RuleFor(x => x.BlogContent).MinimumLength(50).WithMessage("Blog kontenti minimum 50 simvoldan ibarət olmalıdır");
             RuleFor(x => x.CategoryId).NotEmpty().WithMessage("Zəhmət olmasa bir kategorya seçin");
         }
     }

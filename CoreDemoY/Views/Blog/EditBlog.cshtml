@@ -1,0 +1,35 @@
+﻿@model EntityLayer.Concrete.Blog
+@{
+    ViewData["Title"] = "EditBlog";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Bloga düzəliş et!</h1>
+
+@using (Html.BeginForm("EditBlog", "Blog", FormMethod.Post))
+{
+    @Html.Label("Blog Id");
+    @Html.TextBoxFor(x => x.BlogId, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.BlogId, "", new { @class = "form-control" });
+    <br />
+    @Html.Label("Blog başlıq");
+    @Html.TextBoxFor(x => x.BlogTitle, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.BlogTitle, "", new { @class = "text-danger" });
+    <br />
+    @Html.Label("Blog balaca şəkil linki");
+    @Html.TextBoxFor(x => x.BlogThumbnailImage, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.BlogThumbnailImage, "", new { @class = "text-danger" });
+    <br />
+    @Html.Label("Blog şəkil linki");
+    @Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.BlogImage, "", new { @class = "text-danger" });
+    <br />
+    @Html.Label("Blog kateqoryası");
+    @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.cv, new { @class = "form-control" })
+    <br />
+    @Html.Label("Blog mətni");
+    @Html.TextAreaFor(x => x.BlogContent, 10, 3, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.BlogContent, "", new { @class = "text-danger" });
+    <br />
+    <button class="btn btn-success" onclick="return confirm('Dəyişikliklər yadda saxlanılsınmı?')">Yadda saxla</button>
+}

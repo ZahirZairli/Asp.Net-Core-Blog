@@ -37,14 +37,7 @@ namespace CoreDemoY.Controllers
         [HttpGet]
         public IActionResult BlogAdd()
         {
-            CategoryManager cm = new CategoryManager(new EfCategoryRepository());
-            List<SelectListItem> categoryvalues = (from x in cm.GetList()
-                                                   select new SelectListItem
-                                                   { 
-                                                     Text = x.CategoryName,
-                                                     Value = x.CategoryId.ToString()
-                                                   }).ToList();
-            ViewBag.cv = categoryvalues;
+            CatList();
             return View();
         }
         [HttpPost]
@@ -66,14 +59,55 @@ namespace CoreDemoY.Controllers
                 {
                     ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }
-                CategoryManager cm = new CategoryManager(new EfCategoryRepository());
-                List<SelectListItem> categoryvalues = (from x in cm.GetList()
-                                                       select new SelectListItem
-                                                       {
-                                                           Text = x.CategoryName,
-                                                           Value = x.CategoryId.ToString()
-                                                       }).ToList();
-                ViewBag.cv = categoryvalues;
+                CatList();
+            }
+            return View();
+        }
+        public void CatList()
+        {
+            CategoryManager cm = new CategoryManager(new EfCategoryRepository());
+            List<SelectListItem> categoryvalues = (from x in cm.GetList()
+                                                   select new SelectListItem
+                                                   {
+                                                       Text = x.CategoryName,
+                                                       Value = x.CategoryId.ToString()
+                                                   }).ToList();
+            ViewBag.cv = categoryvalues;
+        }
+        public IActionResult DeleteBlog(int id)
+        {
+            var blogvalue = bm.TGetById(id);
+            bm.TDelete(blogvalue);
+            return RedirectToAction("BlogListByWriter", "Blog");
+        }
+        [HttpGet]
+        public IActionResult EditBlog(int id)
+        {
+            CatList();
+            var blogvalue = bm.TGetById(id);
+            return View(blogvalue);
+        }
+        [HttpPost]
+        public IActionResult EditBlog(Blog b)
+        {
+            BlogValidator bv = new BlogValidator();
+            ValidationResult results = bv.Validate(b);
+            if (results.IsValid)
+            {
+                b.WriterId = 12;
+                var blogvalue = bm.TGetById(b.BlogId);
+                b.BlogStatus = true;
+                b.BlogCreateDate = blogvalue.BlogCreateDate;
+                bm.TUpdate(b);
+                return RedirectToAction("BlogListByWriter", "Blog");
+            }
+            else
+            {
+                foreach (var item in results.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+                CatList();
             }
             return View();
         }
