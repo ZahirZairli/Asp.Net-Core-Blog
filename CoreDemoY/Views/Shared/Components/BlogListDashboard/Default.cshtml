@@ -1,0 +1,50 @@
+﻿@using EntityLayer.Concrete
+@model List<Blog>
+<div class="row">
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Son 10 Blog</h4>
+                <div class="table-responsive">
+                    <table style="cursor: pointer;" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th> Başlıq</th>
+                                <th> Mətn </th>
+                                <th> Kateqorya </th>
+                                <th> Tarix </th>
+                                <th> Ətraflı </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                            <tr>
+                                <td>
+                                    <img src="~/writer/assets/images/faces/@item.BlogImage" class="mr-2"> @item.BlogTitle
+                                </td>
+                                <td>
+                                    @if (item.BlogContent.Length >= 31)
+                                     {
+                                        @item.BlogContent.Substring(0, item.BlogContent.Substring(0, 30).LastIndexOf(" "))
+                                     }
+                                    else
+                                    {
+                                        @item.BlogContent
+                                    }
+
+                                </td>
+                                <td>
+                                    <label class="badge badge-gradient-success">@item.Category.CategoryName</label>
+                                </td>
+                                <td>@(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))</td>
+                                <td> <a href="/Blog/BlogReadAll/@item.BlogId" class="btn-sm btn-dark read-m">Ətraflı</a></td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
