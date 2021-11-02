@@ -42,7 +42,7 @@ namespace CoreDemoY.Controllers
                 {
                     p.WriterStatus = true;
                     p.WriterAbout = "Deneme dir qaqa bu";
-                    wm.WriterAdd(p);
+                    wm.TAdd(p);
                     ViewBag.mesaj = "Uğurla qeydiyyatdan keçdiniz!";
                     return RedirectToAction("Index", "Login");   
                 }

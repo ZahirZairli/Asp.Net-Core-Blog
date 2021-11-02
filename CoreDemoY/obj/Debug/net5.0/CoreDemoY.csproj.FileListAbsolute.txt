@@ -189,3 +189,4 @@ C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Bl
 C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Dashboard\Index.cshtml.g.cs
 C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Shared\Components\BlogListDashboard\Default.cshtml.g.cs
 C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Shared\Components\CategoryListDashboard\Default.cshtml.g.cs
+C:\Users\Casper\source\repos\CoreDemoY\CoreDemoY\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterAboutOnDashboard\Default.cshtml.g.cs

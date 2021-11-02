@@ -4,14 +4,16 @@ using DataAccessLayer.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20211102140941_migscorecolumn")]
+    partial class migscorecolumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -93,27 +95,6 @@ namespace DataAccessLayer.Migrations
                     b.HasIndex("WriterId");
 
                     b.ToTable("Blogs");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.BlogRating", b =>
-                {
-                    b.Property<int>("BlogRatingId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("BlogId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("BlogRatingCount")
-                        .HasColumnType("int");
-
-                    b.Property<int>("BlogTotalScore")
-                        .HasColumnType("int");
-
-                    b.HasKey("BlogRatingId");
-
-                    b.ToTable("BlogRatings");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Category", b =>
