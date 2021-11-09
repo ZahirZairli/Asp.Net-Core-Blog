@@ -1,0 +1,79 @@
+﻿@model EntityLayer.Concrete.Writer
+@{
+    ViewData["Title"] = "WriterEditProfile";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+@using (Html.BeginForm("WriterEditProfile", "Writer", FormMethod.Post))
+{
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Ayarlar</h4>
+            <p class="card-description"> Yazar profil bilgiləri</p>
+            <form class="forms-sample">
+                <div class="form-group">
+                    <label for="exampleInputName1">Ad</label>
+                    <input type="text" class="form-control" asp-for="WriterName" id="exampleInputName1" placeholder="Ad">
+                    @Html.ValidationMessageFor(x => x.WriterName, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(x => x.WriterId)
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Email adres</label>
+                    <input type="email" class="form-control" asp-for="WriterMail" id="exampleInputEmail3" placeholder="Email">
+                    @Html.ValidationMessageFor(x => x.WriterMail, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Yeni şifrə</label>
+                    <input autocomplete="off" type="password" class="form-control" asp-for="WriterPassword" id="exampleInputPassword4" placeholder="Şifrə">
+                    @Html.ValidationMessageFor(x => x.WriterPassword, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Şifrəni təkrar girin </label>
+                    <input type="password" autocomplete="off" class="form-control" asp-for="WriterPassword2" id="exampleInputPassword4" placeholder="Şifrə">
+                    @Html.ValidationMessageFor(x => x.WriterPassword2, "", new { @class = "text-danger" })
+                </div>
+                @*<div class="form-group">
+            <label for="exampleSelectGender">Gender</label>
+            <select class="form-control" id="exampleSelectGender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>*@
+                <div class="form-group">
+                    <label>File upload</label>
+                    <input type="file" asp-for="WriterImage" name="img[]" class="file-upload-default">
+                    <div class="input-group col-xs-12">
+                        <input type="text" asp-for="WriterImage" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                        <span class="input-group-append">
+                            <button class="file-upload-browse btn btn-gradient-primary" type="button">Yüklə</button>
+                        </span>
+                        @Html.ValidationMessageFor(x => x.WriterImage, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputCity1">Şəhər</label>
+                    <input type="text" class="form-control" asp-for="WriterCity" id="exampleInputCity1" placeholder="Location">
+                    @Html.ValidationMessageFor(x => x.WriterCity, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleTextarea1">Haqqında</label>
+                    <textarea class="form-control" asp-for="WriterAbout" id="exampleTextarea1" rows="4"></textarea>
+                    @Html.ValidationMessageFor(x => x.WriterAbout, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Əvvəlki şifrəniz</label>
+                    <input autocomplete="off" type="text" class="form-control" name="Yoxla" id="exampleInputPassword4" placeholder="Şifrə">
+                    @if (ViewBag.message != null)
+                    {
+                        <p style="color:red;">@ViewBag.message</p>
+                    }
+
+                </div>
+                <button type="submit" class="btn btn-gradient-primary mr-2">Güncəllə</button>
+                <button class="btn btn-light">Ləğv et</button>
+            </form>
+        </div>
+    </div>
+</div>
+}
+

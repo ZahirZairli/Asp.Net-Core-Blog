@@ -26,7 +26,7 @@ namespace CoreDemoY.Controllers
         {
             p.CommentDate = DateTime.Parse(DateTime.Now.ToShortDateString());
             p.CommentStatus = true;
-            p.BlogId = 2;
+            p.BlogId = 10;
             cm.CommentAdd(p);
             return PartialView();
         }

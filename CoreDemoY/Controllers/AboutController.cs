@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace CoreDemoY.Controllers
 {
+    [AllowAnonymous]
     public class AboutController : Controller
     {
         AboutManager am = new AboutManager(new EfAboutRepository());

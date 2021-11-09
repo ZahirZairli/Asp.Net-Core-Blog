@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DataAccessLayer.Concrete;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,10 @@ namespace CoreDemoY.Controllers
     {
         public IActionResult Index()
         {
+            Context c = new Context();
+            ViewBag.toplamblog = c.Blogs.Count().ToString();
+            ViewBag.category = c.Categories.Count();
+            ViewBag.sizinblog = c.Blogs.Where(x=>x.WriterId==12).Count();
             return View();
         }
     }

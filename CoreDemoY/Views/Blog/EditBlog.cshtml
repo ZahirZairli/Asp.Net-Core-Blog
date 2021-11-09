@@ -8,9 +8,7 @@
 
 @using (Html.BeginForm("EditBlog", "Blog", FormMethod.Post))
 {
-    @Html.Label("Blog Id");
-    @Html.TextBoxFor(x => x.BlogId, new { @class = "form-control" });
-    @Html.ValidationMessageFor(x => x.BlogId, "", new { @class = "form-control" });
+    @Html.HiddenFor(x => x.BlogId, new { @class = "form-control" });
     <br />
     @Html.Label("Blog başlıq");
     @Html.TextBoxFor(x => x.BlogTitle, new { @class = "form-control" });

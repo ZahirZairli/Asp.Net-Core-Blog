@@ -1,4 +1,4 @@
-﻿@model EntityLayer.Concrete.Writer
+﻿@model CoreDemoY.Models.AddProfileImage
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/UserLayout.cshtml";
@@ -10,7 +10,7 @@
         <h3 class="tittle">Qeydiyyatdan keç</h3>
         <div class="inner-sec">
             <div class="login p-5 bg-light mx-auto mw-100">
-                @using (Html.BeginForm("Index", "Register", FormMethod.Post))
+                @using (Html.BeginForm("Index", "Register", FormMethod.Post, new { enctype = "multipart/form-data" }))
                 {
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
@@ -37,8 +37,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="exampleInputPassword1 mb-2">Profil şəkli</label>
-                            @Html.TextBoxFor(x => x.WriterImage, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(x => x.WriterImage, "", new { @class = "text-danger", @type = "file" })
+                            <input type="file" name="WriterImage" class="form-control" />
                         </div>
                         @*<div class="form-group col-md-6">
                             <label for="exampleInputPassword1 mb-2">Şəhər</label>

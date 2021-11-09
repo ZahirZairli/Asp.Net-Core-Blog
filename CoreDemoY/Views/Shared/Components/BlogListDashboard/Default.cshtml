@@ -35,7 +35,20 @@
 
                                 </td>
                                 <td>
-                                    <label class="badge badge-gradient-success">@item.Category.CategoryName</label>
+                                    @if (item.Category.CategoryName.Length <= 3)
+                                    {
+                                        <label class="badge badge-gradient-success">@item.Category.CategoryName</label>
+                                    }
+                                    else if (item.Category.CategoryName.Length > 3 && item.Category.CategoryName.Length <= 5)
+                                    {
+                                        <label class="badge badge-gradient-warning">@item.Category.CategoryName</label>
+                                    }
+                                    else
+                                    {
+                                        <label class="badge badge-gradient-danger">@item.Category.CategoryName</label>
+
+                                    }
+
                                 </td>
                                 <td>@(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))</td>
                                 <td> <a href="/Blog/BlogReadAll/@item.BlogId" class="btn-sm btn-dark read-m">Ətraflı</a></td>
